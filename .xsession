@@ -10,10 +10,10 @@ setxkbmap -layout us,mk \
        -option grp:switch  -option grp:caps_toggle
 
 # /usr/bin/stalonetray --geometry 16x16+150-586 --icon-size 16 & ## for non tray wm's
-
+qxkb & > /dev/null
 xset -b
 
-conky $
+conky &
 
 
 # exec ck-launch-session dwm
