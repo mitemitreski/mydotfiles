@@ -1,0 +1,24 @@
+
+xterm*faceName:          inconsolata
+xterm*faceSize:          11
+xterm*geometry:          95x22
+xterm*boldMode:          false
+xterm*cutNewline:        false
+xterm*on4Clicks:         group
+xterm*on5Clicks:         page
+xterm*internalBorder:    1
+xterm*background:        #ffffff
+xterm*foreground:        #111111
+xterm*metaSendsEscape:   true
+xterm*colorBD:           #111111
+xterm*colorBDMode:       true
+xterm*cursorBlink:       false
+xterm*cursorColor:       #ff9900
+xterm*veryBoldColors:    14
+xterm*loginShell:        true
+xterm*charClass:         33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
+xterm*jumpScroll:        true
+xterm*multiScroll:       true
+xterm*saveLines:         512
+
+

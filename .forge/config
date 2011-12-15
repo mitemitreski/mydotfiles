@@ -1,0 +1,19 @@
+@/* Automatically generated config file */;
+if (!$NO_MOTD) { 
+   echo "    _____                    ";
+   echo "   |  ___|__  _ __ __ _  ___ ";
+   echo "   | |_ / _ \\| `__/ _` |/ _ \\  \c{yellow}\\\\c";
+   echo "   |  _| (_) | | | (_| |  __/  \c{yellow}//\c";
+   echo "   |_|  \\___/|_|  \\__, |\\___| ";
+   echo "                   |___/      ";
+   echo " ";
+}
+
+if ($OS_NAME.startsWith("Windows")) {
+    echo "  Windows? Really? Okay...\n"
+}
+
+set PROMPT "[\c{green}$PROJECT_NAME\c] \c{blue}\W\c \c{green}\$\c ";
+set PROMPT_NOPROJ "[\c{red}no project\c] \c{blue}\W\c \c{red}\$\c ";
+set DEFAULT_PLUGIN_REPO "https://raw.github.com/forge/plugin-repository/master/repository.yaml";
+set IGNOREEOF 1;

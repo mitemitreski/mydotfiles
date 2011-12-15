@@ -1,0 +1,29 @@
+test
+cd ..
+ls
+cd ..
+ls
+mkdir forgeTest
+ls
+cd forge
+cd forgeTest/
+ls
+list-commands --all 
+echo $shell
+new-project --named mite1 --topLevelPackage org.mitemitreski.test
+ls
+ls -alF
+ll
+ls
+ps axvf
+ls
+install forge.scaffold
+scaffold 
+rest setup 
+beans new-bean 
+ls
+list-commands --all 
+rest setup 
+ls
+mvn eclipse:eclipse
+mvn eclipse:eclipse
