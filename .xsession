@@ -9,11 +9,20 @@ export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 setxkbmap -layout us,mk \
        -option grp:switch  -option grp:caps_toggle
 
+
+
+feh --bg-scale  /home/mite/wallpapers/cyberpunk.jpg &
+
+# if idle for 3 sec remove mouse pointer
+
+unclutter -idle 3 &
 # /usr/bin/stalonetray --geometry 16x16+150-586 --icon-size 16 & ## for non tray wm's
-qxkb & > /dev/null
+xsetroot -solid black &
+qxkb  > /dev/null &
 xset -b
 
-conky &
+## X bar
+# conky &
 
 
 # exec ck-launch-session dwm
