@@ -1,5 +1,5 @@
 
-xterm*faceName:          inconsolata
+xterm*faceName:          xft:Dejavu Sans Mono:pixelsize=11.5:antialias=true
 xterm*faceSize:          11
 xterm*geometry:          95x22
 xterm*boldMode:          false

@@ -7,13 +7,13 @@ font 7x13
 own_window_transparent no
 own_window_colour hotpink
 xftalpha 1.0
-update_interval 2
+update_interval 5
 own_window no
 double_buffer yes
 minimum_size 5 5
 draw_shades yes
 draw_outline no
-draw_borders yes
+draw_borders no
 stippled_borders 0
 border_margin 10
 border_width 2

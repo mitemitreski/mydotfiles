@@ -1,6 +1,6 @@
 
 wmname LG3D
-wicd-client &
+#wicd-client &
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
@@ -21,8 +21,8 @@ xsetroot -solid black &
 qxkb  > /dev/null &
 xset -b
 
-## X bar
-# conky &
+## X conky bar
+conky &
 
 
 # exec ck-launch-session dwm

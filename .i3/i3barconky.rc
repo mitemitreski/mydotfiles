@@ -6,6 +6,8 @@ out_to_console yes
 # own_window yes
 # own_window_type dock
 
+double_buffer yes
+
 if_up_strictness link
 
 
@@ -13,6 +15,7 @@ TEXT
 $nodename | \
 $machine $kernel | \
 $uptime | \
+${color #CCCCCC}
 ${if_up eth0}e0: ${addr eth0} | ${endif}\
 ${if_up eth1}e1: ${addr eth1} | ${endif}\
 ${if_up eth2}e2: ${addr eth2} | ${endif}\
