@@ -157,17 +157,16 @@ bind 232 exec xbacklight -dec 15
 bind 233 exec xbacklight -inc 15
 ## sound
 bind 121 exec amixer -q set Master toggle
-bind 122 exec amixer -q set Master 5-
-bind 123 exec amixer -q set Master 5+
+bind 122 exec amixer -q set Master 7-
+bind 123 exec amixer -q set Master 7+
 
 
 ## assigments
-assign [class="gpodder"] → 5
 for_window [class="Pidgin"] floating enable
-for_window [class="gpodder"] floating enable
-
-
-
+for_window [class="Gpodder"] 5 floating enable
+for_window [class="Eclipse"] floating enable
+for_window [class="Gimp"] floating enable
+for_window [class="xterm"] border 0pixel
 
 # bindsym $mod+r mode "resize"
 
@@ -175,8 +174,8 @@ for_window [class="gpodder"] floating enable
 # finds out, if available)
 
 bar {
-#    status_command conky -c ~/.i3/i3barconky.rc
-    status_command i3status -c ~/.i3/.i3status.conf
+    status_command conky -c ~/.i3/i3barconky.rc
+#    status_command i3status -c ~/.i3/.i3status.conf
     position          bottom
     mode              dock
     workspace_buttons yes

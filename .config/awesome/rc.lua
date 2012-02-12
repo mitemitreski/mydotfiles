@@ -279,8 +279,9 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(layouts, -1) end),
 
     -- Prompt
-    awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
-
+    -- awful.key({ modkey },            "r",     function () mypromptbox[mouse.screen]:run() end),
+    -- Run or raise applications with dmenu
+    awful.key({modkey }, "r", function() awful.util.spawn( "dmenu_run" ) end), 
     awful.key({ modkey }, "x",
               function ()
                   awful.prompt.run({ prompt = "Run Lua code: " },

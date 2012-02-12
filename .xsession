@@ -26,5 +26,5 @@ conky &
 
 
 # exec ck-launch-session dwm
-exec ck-launch-session i3
-# exec ck-launch-session awesome
+# exec ck-launch-session i3 >~/i3log/i3-$(date +'%F-%k-%M-%S') 2>&1
+exec ck-launch-session awesome
