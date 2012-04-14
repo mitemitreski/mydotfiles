@@ -1,8 +1,8 @@
 
 wmname LG3D
-#wicd-client &
+# wicd-client &
 export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
+# export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=on"
 export LD_LIBRARY_PATH=/usr/lib:$LD_LIBRARY_PATH
 
 # t his is for keyboard layout switch
@@ -26,5 +26,7 @@ conky &
 
 
 # exec ck-launch-session dwm
+  exec ck-launch-session i3 
+## debug:
 # exec ck-launch-session i3 >~/i3log/i3-$(date +'%F-%k-%M-%S') 2>&1
-exec ck-launch-session awesome
+# exec ck-launch-session awesome

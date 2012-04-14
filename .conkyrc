@@ -47,7 +47,7 @@ ${color #ffccaa}DISK
 ${color white}${hr 1}
   ${color #888888}/     : ${color #CCCCCC}${fs_size /}    ${fs_used_perc /} % ${alignr}${fs_bar 6,100 /}
   ${color #888888}/home : ${color #CCCCCC}${fs_size /home}    ${fs_used_perc /home} % ${alignr}${fs_bar 6,100 /home}
-
+  ${color #888888}/tmp : ${color #CCCCCC}${fs_size /tmp}    ${fs_used_perc /tmp} % ${alignr}${fs_bar 6,100 /tmp}
 ${color #ffccaa}PROCESSES
 ${color white}${hr 1}
   ${color #888888}Processes: ${color #CCCCCC}$processes  ${color #888888}Running: ${color #CCCCCC}$running_processes

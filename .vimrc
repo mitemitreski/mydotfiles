@@ -1,5 +1,8 @@
 " this enables sytax highight in prog files
 syntax on
+syntax enable
+set background=dark
+colorscheme morning
 
 " it enables VIM only syntax not VI
 set nocompatible

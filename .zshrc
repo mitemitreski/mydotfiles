@@ -56,7 +56,6 @@ alias -s png=feh
 alias -s jpg=feh
 alias -s torrent='aria2c -S'
 alias -s gif=feh
-alias -s avi='smplayer'
 alias -s html=$BROWSER
 alias -s org=$BROWSER
 alias -s php=$BROWSER
@@ -65,7 +64,9 @@ alias -s net=$BROWSER
 alias -s java=$EDITOR
 alias -s txt=$EDITOR
 alias -s PKGBUILD=$EDITOR
-
+alias -s pdf='evince'
+alias -s avi='smplayer'
+alias -s mp4='smplayer'
 ## autocomplete stuff
 
 
@@ -88,12 +89,6 @@ backward-delete-to-slash () {
     }
     zle -N backward-delete-to-slash
 
-
-
-
-
-
-
 ## Random small cow with awesome quote
 RANGE=4
 number=$RANDOM
@@ -114,6 +109,4 @@ case $number in
 esac
 
 fortune -s  | cowsay -f $cow
-
-
 
