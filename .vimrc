@@ -19,6 +19,10 @@ set expandtab
 
 " enables filetype detection
 filetype on
+   
+
+" filetyle indention   
+filetype indent on
 
 " enables Hightlinght trailing whitespace and lines +80
 highlight LongLine ctermbg=DarkYellow guibg=DarkYellow
@@ -27,4 +31,13 @@ highlight WhitespaceEOL ctermbg=DarkYellow guibg=DarkYellow
 " if v:version >=702
 "   " lines longer then 80 cols
 "   au BufWinEnter * let w:m0=matchadd('LongLine','\%>80v.\+',-1)
-"   au 
+"   au
+
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+

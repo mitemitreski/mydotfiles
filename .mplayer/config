@@ -1,3 +1,4 @@
 # Write your default config options here!
-
+cache=18192
+cache-min=40
 

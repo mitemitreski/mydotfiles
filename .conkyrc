@@ -68,3 +68,6 @@ ${color white}${hr 1}
 
 ${color #666666}OTHER
   Entropy Available ${entropy_avail}
+${color #ffccaa}Feeds
+${color white}${hr 1}
+  planet.archlinux.org :

@@ -24,8 +24,7 @@ ${if_up wlan0}w0: ${addr wlan0} (${wireless_link_qual_perc wlan0}% ${wireless_es
 ${if_up wlan1}w1: ${addr wlan1} (${wireless_link_qual_perc wlan1}% ${wireless_essid wlan1}) | ${endif}\
 ${if_up wlan2}w2: ${addr wlan2} (${wireless_link_qual_perc wlan2}% ${wireless_essid wlan2}) | ${endif}\
 ${if_up wlan3}w3: ${addr wlan3} (${wireless_link_qual_perc wlan3}% ${wireless_essid wlan3}) | ${endif}\
-VPN: ${if_running vpnc}yes${else}no${endif} | \
-${loadavg 1} ${loadavg 2} ${loadavg 3} | \
+VPN: ${if_running openvpn}yes${else}no${endif} | \
 CPU: ${cpu cpu1}%${if_empty ${cpu cpu2}}$else ${cpu cpu2}%$endif${if_empty ${cpu cpu3}}$else ${cpu cpu3}%$endif${if_empty ${cpu cpu4}}$else ${cpu cpu4}%$endif${if_empty ${cpu cpu5}}$else ${cpu cpu5}%$endif${if_empty ${cpu cpu6}}$else ${cpu cpu6}%$endif${if_empty ${cpu cpu7}}$else ${cpu cpu7}%$endif${if_empty ${cpu cpu8}}$else ${cpu cpu8}%$endif | \
 Mem: $mem/$memmax ($memperc%) | \
 ${time %a %Y-%m-%d %I:%M%P}
