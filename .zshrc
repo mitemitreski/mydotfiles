@@ -40,7 +40,7 @@ setopt SHARE_HISTORY # share history between open shells
 
 # vars used later on by Zsh
 export EDITOR="vim"
-export BROWSER=links
+export BROWSER=chromium
 export FORGE_HOME="/project/jboss/forge-distribution-1.0.0.Beta5"
 export PATH=$PATH:$FORGE_HOME/bin
 export SVN_EDITOR="/usr/bin/vim"
@@ -48,14 +48,16 @@ export SVN_EDITOR="/usr/bin/vim"
 prompt walters
 ## aliases
 alias ls='ls -hF --color=auto'
-alias ll='ls -alhF --color=auto'
+alias ll='ls -altrhF --color=auto'
 alias mkdir='mkdir -p -v'
 alias firefox='firefox -ProfileManager'
+alias scrot='scrot -d 3 ~/screenshots/%Y-%m-%d-%T-screenshot.png'
+
 ## Auto Open aliases
-alias -s png=feh
-alias -s jpg=feh
+alias -s png=gpicview
+alias -s jpg=gpicview
 alias -s torrent='aria2c -S'
-alias -s gif=feh
+alias -s gif=gpicview
 alias -s html=$BROWSER
 alias -s org=$BROWSER
 alias -s php=$BROWSER
@@ -108,5 +110,11 @@ case $number in
         ;;
 esac
 
-fortune -s  | cowsay -f $cow
+fortune -n 350  | cowsay -f $cow
+
+
+
+
+
+eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
