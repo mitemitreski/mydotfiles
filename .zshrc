@@ -51,7 +51,7 @@ alias ls='ls -hF --color=auto'
 alias ll='ls -altrhF --color=auto'
 alias mkdir='mkdir -p -v'
 alias firefox='firefox -ProfileManager'
-alias scrot='scrot -d 3 ~/screenshots/%Y-%m-%d-%T-screenshot.png'
+alias scrot='scrot -d 3 -s ~/screenshots/%Y-%m-%d-%T-screenshot.png'
 
 ## Auto Open aliases
 alias -s png=gpicview
