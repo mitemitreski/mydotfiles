@@ -114,7 +114,11 @@ fortune -n 350  | cowsay -f $cow
 
 
 
-
+# -- disable ^S/^Q flow control -------------------------------------------
+if tty -s ; then
+   stty -ixon
+   stty -ixoff
+fi
 
 eval $(keychain --eval --agents ssh -Q --quiet id_rsa)
 
