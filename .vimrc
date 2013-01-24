@@ -1,4 +1,9 @@
+source ~/.vim/spacehi.vim
+
+SpaceHi
+
 " this enables sytax highight in prog files
+set t_Co=256    " 256 Colors
 syntax on
 syntax enable
 set background=dark
@@ -8,14 +13,29 @@ colorscheme morning
 set nocompatible
 
 " A tab produces 2-space indent
+set smartindent
+set ts=2
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-"enable auto indnt
-:filetype indent on
+" remove tailling withipspace on i
+autocmd FileType html,js,c,cpp,java,php autocmd BufWritePre <buffer> :%s/\s\+$//e
 
+" space highligt
+autocmd BufNewFile,BufReadPost,FilterReadPost,FileReadPost,Syntax * SpaceHi
+autocmd FileType help     NoSpaceHi
+autocmd FileType diff     NoSpaceHi
+autocmd FileType man      NoSpaceHi
+autocmd FileType scratchy NoSpaceHi
+au FileType help NoSpaceHi
 
+" wrap after 120 char
+set tw=120
+set wrap
+
+" braces
+set showmatch
 
 " enables filetype detection
 filetype on
@@ -24,20 +44,16 @@ filetype on
 " filetyle indention   
 filetype indent on
 
-" enables Hightlinght trailing whitespace and lines +80
-highlight LongLine ctermbg=DarkYellow guibg=DarkYellow
-highlight WhitespaceEOL ctermbg=DarkYellow guibg=DarkYellow
+" UTF-8 ftw
+set enc=utf-8
+set fenc=utf-8
+set termencoding=utf08
 
-" if v:version >=702
-"   " lines longer then 80 cols
-"   au BufWinEnter * let w:m0=matchadd('LongLine','\%>80v.\+',-1)
-"   au
-
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhitespace /\s\+$/
-autocmd BufWinLeave * call clearmatches()
+" ================ Searching =========================
+set ignorecase                      " Ignore case when searching
+set smartcase                       " Don't ignore case if search contains upper-case characters
+set gdefault                        " Substitude command (:s) always does global search
+set incsearch                       " Find the next match as we type the search
+set hlsearch                        " Highlight searches by default
 
 
