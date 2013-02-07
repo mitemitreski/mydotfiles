@@ -1,6 +1,29 @@
 source ~/.vim/spacehi.vim
 
-SpaceHi
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+
+
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+Bundle 'valloric/MatchTagAlways'
+
+
+
+" ================ General Config ====================
+set title                           " Update terminal window title
+set showmode                        " Show the current mode
+set showcmd                         " Show incomplete commands
+set autoread                        " Reload files changed outside of vim
+set ttyfast                         " Use a fast terminal connection
+set ruler                           " Show the line and column number of the cursor position
+set backspace=indent,eol,start      " Allow backspace in insert mode
+set laststatus=2                    " Always show a status line
+set encoding=utf-8                  " Default character encoding
+set showtabline=2                   " Always Show Tab Line
+
 
 " this enables sytax highight in prog files
 set t_Co=256    " 256 Colors
@@ -44,10 +67,6 @@ filetype on
 " filetyle indention   
 filetype indent on
 
-" UTF-8 ftw
-set enc=utf-8
-set fenc=utf-8
-set termencoding=utf08
 
 " ================ Searching =========================
 set ignorecase                      " Ignore case when searching
