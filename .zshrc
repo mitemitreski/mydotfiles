@@ -41,8 +41,7 @@ setopt SHARE_HISTORY # share history between open shells
 # vars used later on by Zsh
 export EDITOR="vim"
 export BROWSER=chromium
-export FORGE_HOME="/project/jboss/forge-distribution-1.0.0.Beta5"
-export PATH=$PATH:$FORGE_HOME/bin
+export PATH=$PATH:~/.gem/ruby/2.0.0/bin/
 export SVN_EDITOR="/usr/bin/vim"
 ## This will set the default prompt to the walters theme
 prompt walters
@@ -69,6 +68,7 @@ alias -s PKGBUILD=$EDITOR
 alias -s pdf='evince'
 alias -s avi='smplayer'
 alias -s mp4='smplayer'
+alias -s mkv='mplayer'
 ## autocomplete stuff
 
 

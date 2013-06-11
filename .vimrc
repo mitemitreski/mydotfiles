@@ -1,6 +1,3 @@
-source ~/.vim/spacehi.vim
-
-
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 
@@ -8,9 +5,11 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-Bundle 'valloric/MatchTagAlways'
+Bundle 'Valloric/MatchTagAlways'
 
+Bundle 'git://github.com/vim-scripts/spacehi.vim.git'
 
+Bundle 'git://github.com/vim-scripts/Zenburn.git'
 
 " ================ General Config ====================
 set title                           " Update terminal window title
@@ -29,9 +28,10 @@ set showtabline=2                   " Always Show Tab Line
 set t_Co=256    " 256 Colors
 syntax on
 syntax enable
-set background=dark
-colorscheme morning
+" set background=dark
+color zenburn
 
+highlight MatchTag ctermfg=white ctermbg=black guifg=black guibg=white
 " it enables VIM only syntax not VI
 set nocompatible
 
@@ -62,9 +62,9 @@ set showmatch
 
 " enables filetype detection
 filetype on
-   
 
-" filetyle indention   
+
+" filetyle indention
 filetype indent on
 
 

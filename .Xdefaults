@@ -1,4 +1,3 @@
-
 xterm*faceName:          xft:Dejavu Sans Mono:pixelsize=11.5:antialias=true
 xterm*faceSize:          11
 xterm*geometry:          95x22
@@ -7,18 +6,30 @@ xterm*cutNewline:        false
 xterm*on4Clicks:         group
 xterm*on5Clicks:         page
 xterm*internalBorder:    1
-xterm*background:        #ffffff
-xterm*foreground:        #111111
 xterm*metaSendsEscape:   true
-xterm*colorBD:           #111111
-xterm*colorBDMode:       true
 xterm*cursorBlink:       false
-xterm*cursorColor:       #ff9900
 xterm*veryBoldColors:    14
 xterm*loginShell:        true
 xterm*charClass:         33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48,35:48,58:48,63:48,61:48,44:48,38:48,59:48
 xterm*jumpScroll:        true
 xterm*multiScroll:       true
-xterm*saveLines:         512
+xterm*saveLines:         4096
 
-
+xterm*background:  #3f3f3f
+xterm*foreground:  #dcdccc
+xterm*color0:      #1E2320
+xterm*color1:      #705050
+xterm*color2:      #60b48a
+xterm*color3:      #dfaf8f
+xterm*color4:      #506070
+xterm*color5:      #dc8cc3
+xterm*color6:      #8cd0d3
+xterm*color7:      #dcdccc
+xterm*color8:      #709080
+xterm*color9:      #dca3a3
+xterm*color10:     #c3bf9f
+xterm*color11:     #f0dfaf
+xterm*color12:     #94bff3
+xterm*color13:     #ec93d3
+xterm*color14:     #93e0e3
+xterm*color15:     #ffffff
